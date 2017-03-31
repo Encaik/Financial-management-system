@@ -1,0 +1,117 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #d6d6d6;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 1534px;
+    position: relative;
+    left:-19px;
+    top:-21px;
+}
+.tool{
+    float: left;
+    margin: 0;
+    background-color: #606260;
+    width: 20%;
+    height: 745px;
+}
+.page{
+    float: right;
+    margin: 0;
+    background-color: #d6d6d6;
+    width: 80%;
+    height: 745px;
+}
+.Logo,.user{
+    background-color: #ebebeb;
+    height: 150px;
+}
+.Logo img{
+    margin: 0;
+    background-color: #616260;
+    width: 307px;
+}
+.user img{
+    width: 100px;
+}
+.user p{
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 5px;
+}
+.user {
+    text-align: center;
+    position: relative;
+    padding-bottom: 45px;
+}
+.banner p{
+    margin: 0;
+    padding: 0;
+    width: 306px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.banner p:hover{
+    background-color: #c9c7c9;
+}
+.sonBar0 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #8c8f8b;
+}
+.sonBar1 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #8c8f8b;
+}
+.sonBar2 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #8c8f8b;
+}
+.sonBar3 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #8c8f8b;
+}
+.banner{
+    color: #ebebeb;
+}
+.page{
+    border: 0 solid #ebebeb;
+    text-align: center;
+    vertical-align: middle;
+}
+.page table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+.page td{
+    border: 2px solid #000000;
+    width: 120px;
+    height: 30px;
+}
+.last{
+    margin: 0;
+    background-color: #ebebeb;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    position: relative;
+    top: -10px;
+}

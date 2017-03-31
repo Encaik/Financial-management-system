@@ -1,0 +1,118 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #d08884;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 1534px;
+}
+.tool{
+    float: left;
+    margin: 0;
+    background-color: #8d1516;
+    width: 20%;
+    height: 745px;
+}
+.page{
+    float: right;
+    margin: 0;
+    background-color: #d08884;
+    width: 80%;
+    height: 745px;
+}
+.Logo,.user{
+    background-color: #ebebeb;
+    height: 150px;
+}
+.Logo img{
+    margin: 0;
+    background-color: #8d1516;
+    width: 307px;
+}
+.user img{
+    width: 100px;
+}
+.user p{
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 5px;
+}
+.user {
+    text-align: center;
+    position: relative;
+    padding-bottom: 45px;
+}
+.banner p{
+    margin: 0;
+    padding: 0;
+    width: 306px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.banner p:hover{
+    background-color: #db1617;
+}
+.sonBar1 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #bb1a1b;
+}
+.sonBar2 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #bb1a1b;
+}
+.sonBar3 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #bb1a1b;
+}
+.banner{
+    color: #ebebeb;
+}
+.page{
+    border: 0 solid #ebebeb;
+}
+.page th{
+    background-color: rgba(212, 213, 214, 0.5);
+    width: 105px;
+    height: 48px;
+    border: 2px solid rgba(65, 105, 225, 0);
+    background-size: 250px 146px;
+}
+.page td{
+    padding: 10px 20px;
+    background-color: rgba(255, 254, 249, 0.5);
+    width: 145px;
+    height: 48px;
+    border: 2px solid rgba(65, 105, 225, 0);
+    background-size: 250px 146px;
+}
+.page td:hover{
+    border: 2px solid rgba(255, 254, 248, 0.8);
+    background-color: rgba(255, 254, 248, 0.8);
+}
+.page table{
+    text-align: center;
+    vertical-align: middle;
+    padding: 22px 28px;
+    border-spacing: 1px;
+}
+.last{
+    margin: 0;
+    padding-top: 0;
+    background-color: #ebebeb;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+}

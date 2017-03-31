@@ -1,0 +1,142 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e1ffdc;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 1534px;
+}
+.tool{
+    float: left;
+    margin: 0;
+    background-color: #006231;
+    width: 20%;
+    height: 745px;
+}
+.bar_page{
+    float: right;
+    margin: 0;
+    background-color: #e1ffdc;
+    width: 80%;
+    height: 745px;
+}
+.Logo,.user{
+    background-color: #ebebeb;
+    height: 150px;
+}
+.Logo img{
+    margin: 0;
+    background-color: #006231;
+    width: 307px;
+}
+.user img{
+    width: 100px;
+}
+.user p{
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 5px;
+}
+.user {
+    text-align: center;
+    position: relative;
+    padding-bottom: 45px;
+}
+.banner p{
+    margin: 0;
+    padding: 0;
+    width: 306px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.banner p:hover{
+    background-color: #00c956;
+}
+.sonBar1 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #008f42;
+}
+.sonBar2 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #008f42;
+}
+.sonBar3 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #008f42;
+}
+.banner{
+    color: #ebebeb;
+}
+.bar_page td{
+    background-color: rgba(212, 213, 214, 0.5);
+    width: 250px;
+    height: 146px;
+    border: 2px solid rgba(65, 105, 225, 0);
+    border-radius: 15px;
+    background-size: 250px 146px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 900;
+}
+.bar_page td:hover{
+    border: 2px solid rgba(0, 143, 66, 0.5);
+    color: #006231;
+    font-size: 52px;
+}
+.bar_page table{
+    margin: 45px;
+    border-spacing: 45px;
+}
+.bar1_1_page_tool ul{
+    vertical-align: middle;
+    list-style: none;
+}
+.bar1_1_page_tool li{
+    float: left;
+    width: 200px;
+}
+.bar1_1_page th{
+    width: 1000px;
+    border: 2px solid rgba(65, 105, 225, 0);
+    background-color: rgba(212, 213, 214, 0.5);
+    height: 30px;
+}
+.bar1_1_page td{
+    width: 1000px;
+    border: 2px solid rgba(65, 105, 225, 0);
+    background-color: rgba(212, 213, 214, 0.5);
+    height: 30px;
+}
+.bar1_1_page td:hover{
+    background-color: rgba(86, 82, 83, 0.5);
+}
+.bar1_1_page table{
+    madrgin: 0;
+    border-collapse: collapse;
+}
+.bar1_1_page{
+    text-align: center;
+    display: none;
+}
+.last{
+    margin: 0;
+    padding-top: 0;
+    background-color: #ebebeb;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+}

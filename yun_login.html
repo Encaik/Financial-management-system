@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>扬州大学云财务管理系统登录界面</title>
+    <link href="yun_login.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery-3.2.0.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="Logo">
+            <img width="400px" src="./Logo/扬大横_绿.png" alt="Logo2">
+        </div>
+        <div>
+            <p class="title">云财务<br>管理系统</p>
+        </div>
+        <div class="login">
+            <form action="yun_login.php" method="post">
+                账号：<input class="input" name="id" type="text" maxlength="20" placeholder="&#32;&#32;请输入学号/账号">
+                <br>
+                密码：<input class="input" name="pwd" type="password" maxlength="20" placeholder="&#32;&#32;请输入您的密码">
+                <br>
+                验证码：<input class="input2" name="yzm" type="text" maxlength="4" placeholder="&#32;&#32;验证码">
+                <img src="./yzm/u8c3.png" width="100px" height="50px" alt=""  id="yanzheng">
+                <a href="">>>点击更换验证码图片</a>
+                <br>
+                <input class="button" name="submit1" type="submit" value="学生登录">
+                <input class="button2" name="submit2" type="submit" value="教师登录">
+                <input class="button3" name="submit3" type="submit" value="管理员登录">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

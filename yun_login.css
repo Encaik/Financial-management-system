@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #ccffe4 url("./image/3.png") no-repeat;
+    font-size: 25px;
+    font-family: "等线 Light","Microsoft YaHei UI";
+    color: #006d33;
+    font-weight: 800;
+    user-select:none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    user-select:none;
+}
+.background {
+    margin: 75px 65px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.51);
+    width: 1400px;
+    height: 600px;
+}
+.Logo{
+    padding: 20px 20px;
+}
+.title{
+    font-size: 120px;
+    text-indent: 0.5em;
+    position: relative;
+    left: 65px;
+    top: -150px;
+    color: rgb(0, 109, 51);
+    font-family: "Microsoft YaHei UI";
+    line-height: 200px;
+    text-shadow: #006d33;
+    letter-spacing:20px;
+}
+.input{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.input2{
+    width: 140px;
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.login{
+    position: absolute;
+    left: 900px;
+    top: 150px;
+    line-height: 110px;
+}
+.button{
+    width: 150px;
+    height: 50px;
+    background: #006d33;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family:"Microsoft YaHei UI";
+    color: #fbfbff;
+    position: relative;
+    left: -20px;
+    border: 0 solid #006d33;
+}
+.button2{
+    width: 150px;
+    height: 50px;
+    background: #006d33;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family:"Microsoft YaHei UI";
+    color: #fbfbff;
+    border: 0 solid #006d33;
+}
+.button3{
+    width: 170px;
+    height: 50px;
+    background: #006d33;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family:"Microsoft YaHei UI";
+    color: #fbfbff;
+    position: relative;
+    left: 20px;
+    border: 0 solid #006d33;
+}
+.input,.input2{
+    border-radius: 8px;
+    border: solid 1px #006d33;
+}
+#yanzheng {
+    position: relative;
+    top: 20px;
+}
+a{
+    font-size: 15px;
+}
+a:link{
+    color: #006d33;
+    text-decoration: none;
+}
+a:hover{
+    color: #00e76b;
+    text-decoration: none;
+}
+a:visited{
+    color: #006d33;
+    text-decoration: none;
+}
+input[type=button]:link{
+    background: #006d33;
+    color: #ffffff;
+}
+input[type=button]:active{
+    border: 1px solid #006d33;
+    background: #ffffff;
+    color: #006d33;
+}
