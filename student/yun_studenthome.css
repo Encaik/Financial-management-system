@@ -5,6 +5,9 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     width: 1534px;
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 .tool{
     float: left;
@@ -101,42 +104,34 @@ body {
     margin: 45px;
     border-spacing: 45px;
 }
-.bar1_1_page_tool ul{
-    vertical-align: middle;
-    list-style: none;
-}
-.bar1_1_page_tool li{
-    float: left;
-    width: 200px;
-}
-.bar1_1_page th{
+.bar1_1_page th,.bar1_2_page th{
     width: 1000px;
     border: 2px solid rgba(65, 105, 225, 0);
     background-color: rgba(212, 213, 214, 0.5);
     height: 30px;
 }
-.bar1_1_page td{
+.bar1_1_page td,.bar1_2_page td{
     width: 1000px;
     border: 2px solid rgba(65, 105, 225, 0);
     background-color: rgba(212, 213, 214, 0.5);
     height: 30px;
 }
-.bar1_1_page td:hover{
+.bar1_1_page td:hover,.bar1_2_page th:hover{
     background-color: rgba(86, 82, 83, 0.5);
 }
-.bar1_1_page table{
+.bar1_1_page table,.bar1_2_page table{
     madrgin: 0;
     border-collapse: collapse;
 }
-.bar1_1_page{
+.bar1_1_page,.bar1_2_page{
     text-align: center;
     display: none;
 }
 .last{
-    margin: 0;
-    padding-top: 0;
+    width: 100%;
     background-color: #ebebeb;
     text-align: center;
-    vertical-align: middle;
-    height: 30px;
+    position: static;
+    bottom: 0;
+    right: 0;
 }

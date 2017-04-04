@@ -102,9 +102,14 @@ body {
     width: 100%;
 }
 .page td{
-    border: 2px solid #000000;
+    border: 0px solid #000000;
     width: 120px;
-    height: 30px;
+    height: 29px;
+}
+.page th{
+    border: 0px solid #000000;
+    width: 120px;
+    height: 29px;
 }
 .last{
     margin: 0;
