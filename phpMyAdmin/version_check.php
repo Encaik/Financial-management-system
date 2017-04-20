@@ -8,7 +8,7 @@
 exit;
 header('Content-Type: application/json');
 
-$file = 'http://www.phpmyadmin.net/home_page/version.json';
+$file =/* 'http://www.phpmyadmin.net/home_page/version.json'*/;
 
 $response = '{}';
 

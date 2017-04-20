@@ -5,16 +5,13 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     width: 1534px;
-    position: relative;
-    left:-19px;
-    top:-21px;
 }
 .tool{
     float: left;
     margin: 0;
     background-color: #606260;
     width: 20%;
-    height: 745px;
+    height: 770px;
 }
 .page{
     float: right;
@@ -56,14 +53,6 @@ body {
 .banner p:hover{
     background-color: #c9c7c9;
 }
-.sonBar0 p {
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    display: none;
-    line-height: 40px;
-    background-color: #8c8f8b;
-}
 .sonBar1 p {
     font-size: 20px;
     text-align: center;
@@ -81,6 +70,14 @@ body {
     background-color: #8c8f8b;
 }
 .sonBar3 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #8c8f8b;
+}
+.sonBar4 p {
     font-size: 20px;
     text-align: center;
     vertical-align: middle;
@@ -111,12 +108,115 @@ body {
     width: 120px;
     height: 29px;
 }
-.last{
-    margin: 0;
-    background-color: #ebebeb;
-    text-align: center;
-    vertical-align: middle;
+/*各页面初始化隐藏*/
+.bar1_2_page,.bar2_1_page,.bar2_2_page,.bar3_4_page,.bar3_1_page,.bar3_2_page,.bar3_3_page,.bar3_4_page,.bar4_1_page,.bar4_2_page,.bar4_3_page{
+    float: right;
+    width: 80%;
+    display: none;
+}
+.bar1_1_page{
+    float: right;
+    width: 80%;
+}
+.bar1_1_page .yue{
+    margin: 80px 80px;
+    padding: 60px;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: rgba(226,234,235,0.53);
+}
+.bar1_1_page .button{
+    margin: 0 50px;
+    width: 90px;
+    height: 35px;
+    background: #8c8f8b;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fbfbff;
+    border:0 solid #8c8f8b;
+}
+.bar1_2_page .yue{
+    margin: 100px 80px;
+    padding: 60px;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: rgba(226,234,235,0.53);
+}
+input[type="text"] {
+    border-radius: 5px;
+    border: solid 1px #8c8f8b;
+    height: 20px;
+    width: 150px;
+}
+.bar1_2_page .button{
+    margin: 0 400px;
+    width: 90px;
+    height: 35px;
+    background: #8c8f8b;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fbfbff;
+    border:0 solid #8c8f8b;
+}
+select{
+
+    height:30px;
+    width:100px;
+}
+.bar2_1_page th,.bar2_2_page th,.bar4_1_page th{
+    width: 1000px;
+    border: 2px solid rgba(156, 156, 156, 0);
+    background-color: rgba(1, 8, 9, 0.5);
     height: 30px;
-    position: relative;
-    top: -10px;
+}
+.bar2_1_page td,.bar2_2_page td,.bar4_1_page td{
+    width: 1000px;
+    border-bottom: 2px solid rgba(120, 125, 121, 0.46);
+    background-color: rgba(212, 213, 214, 0.5);
+    height: 28px;
+}
+.bar2_1_page table,.bar2_2_page table,.bar4_1_page table{
+    margin: 0;
+    border-collapse: collapse;
+}
+.bar2_1_page .button{
+    margin: 5px 10px;
+    width: 70px;
+    height: 20px;
+    background: #8c8f8b;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fbfbff;
+    border:0 solid #8c8f8b;
+}
+.bar4_1_page .button1{
+    margin: 5px 200px;
+    width: 100px;
+    height: 30px;
+    background: #8c8f8b;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fbfbff;
+    border:0 solid #8c8f8b;
+}
+.bar2_2_page .button2,.bar4_1_page .button2{
+    margin: 5px 10px;
+    width: 70px;
+    height: 20px;
+    background: #8c8f8b;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fbfbff;
+    border:0 solid #8c8f8b;
+}
+.bar2_2_page .button3,.bar4_1_page .button3{
+    margin: 0;
+    width: 70px;
+    height: 20px;
+    background: #8c8f8b;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fbfbff;
+    border:0 solid #8c8f8b;
+    display:inline;
 }

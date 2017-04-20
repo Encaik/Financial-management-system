@@ -5,13 +5,14 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     width: 1534px;
+    text-align: center;
 }
 .tool{
     float: left;
     margin: 0;
     background-color: #8d1516;
     width: 20%;
-    height: 745px;
+    height: 770px;
 }
 .page{
     float: right;
@@ -48,18 +49,10 @@ body {
     width: 306px;
     font-size: 30px;
     text-align: center;
-    line-height: 60px;
+    line-height: 55px;
 }
 .banner p:hover{
     background-color: #db1617;
-}
-.sonBar1 p {
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    display: none;
-    line-height: 40px;
-    background-color: #bb1a1b;
 }
 .sonBar2 p {
     font-size: 20px;
@@ -77,20 +70,28 @@ body {
     line-height: 40px;
     background-color: #bb1a1b;
 }
+.sonBar4 p {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    line-height: 40px;
+    background-color: #bb1a1b;
+}
 .banner{
     color: #ebebeb;
 }
-.page{
+.bar_page{
     border: 0 solid #ebebeb;
 }
-.page th{
+.bar_page th{
     background-color: rgba(212, 213, 214, 0.5);
     width: 105px;
     height: 48px;
     border: 2px solid rgba(65, 105, 225, 0);
     background-size: 250px 146px;
 }
-.page td{
+.bar_page td{
     padding: 10px 20px;
     background-color: rgba(255, 254, 249, 0.5);
     width: 145px;
@@ -98,11 +99,11 @@ body {
     border: 2px solid rgba(65, 105, 225, 0);
     background-size: 250px 146px;
 }
-.page td:hover{
+.bar_page td:hover{
     border: 2px solid rgba(255, 254, 248, 0.8);
     background-color: rgba(255, 254, 248, 0.8);
 }
-.page table{
+.bar_page table{
     text-align: center;
     vertical-align: middle;
     padding: 22px 28px;
@@ -115,4 +116,111 @@ body {
     text-align: center;
     vertical-align: middle;
     height: 30px;
+}
+.bar1_page,.bar2_1_page,.bar2_2_page,.bar3_1_page,.bar3_2_page,.bar3_3_page,.bar4_1_page,.bar4_2_page{
+    float: right;
+    width: 80%;
+    display: none;
+}
+
+.bar1_page,.bar2_2_page,.bar3_3_page{
+    border: 0 solid #ebebeb;
+
+}
+.bar1_page th,.bar2_2_page th,.bar3_1_page th,.bar3_3_page th{
+    width: 1000px;
+    border: 2px solid rgba(156, 156, 156, 0);
+    background-color: rgba(143, 73, 71, 0.5);
+    height: 30px;
+}
+.bar1_page td,.bar2_2_page td,.bar3_1_page td,.bar3_3_page td{
+    width: 1000px;
+    border-bottom: 2px solid rgba(120, 125, 121, 0.46);
+    background-color: rgba(212, 213, 214, 0.5);
+    height: 28px;
+}
+
+
+.bar1_page table,.bar2_2_page table,.bar3_1_page table,.bar3_3_page table{
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.bar1_page form{
+    margin:20px 0 10px 20px;
+
+}
+.bar1_page select{
+    height:30px;
+    width:100px;
+}
+
+
+
+
+
+input[type="text"] {
+    border-radius: 5px;
+    border: solid 1px #bb1a1b;
+    height: 20px;
+    width: 150px;
+}
+
+textarea{
+    border-radius: 5px;
+    border: solid 1px #bb1a1b;
+    height: 100px;
+    width: 450px;
+}
+
+.bar2_1_page .yue{
+    margin: 40px 80px;
+    padding: 50px;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: rgba(226,234,235,0.53);
+}
+.bar3_2_page .yue{
+    margin: 70px 80px;
+    padding: 50px;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: rgba(226,234,235,0.53);
+}
+.bar4_1_page .yue,.bar4_2_page .yue{
+    margin: 100px 80px;
+    padding: 60px;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: rgba(226,234,235,0.53);
+}
+
+.bar2_1_page p,.bar3_2_page p,.bar4_1_page p,.bar4_2_page p{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-size: 30px;
+    line-height: 75px;
+}
+
+.button{
+    margin: 0 50px;
+    width: 90px;
+    height: 35px;
+    background: #bb1a1b;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fbfbff;
+    border: 0 solid #bb1a1b;
+}
+
+.bar3_3_page input[type="button"]{
+    margin: 0 50px;
+    width: 90px;
+    height: 35px;
+    background: #fcfaff;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #000000;
+    border: 0 solid #feffff;
 }
