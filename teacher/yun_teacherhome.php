@@ -331,12 +331,12 @@ include "teacher.php"
         <form>
             <p>个人信息</p>
             <hr>
-            <div style="text-align: left;padding-left:300px">
-                <p>姓名：</p>
-                <p>性别：</p>
-                <p>学院：</p>
-                <p>工号：</p>
-                <p>职务：</p>
+            <div style="text-align: left;padding-left:300px;position:relative;left: 25px">
+                <p>姓名：<?php echo $arr[0] ?></p>
+                <p>性别：<?php echo $arr[3] ?></p>
+                <p>学院：<?php echo $arr[4] ?></p>
+                <p>工号：<?php echo $arr[1] ?></p>
+                <p>职务：<?php echo $arr[5] ?></p>
             </div>
             <hr>
         </form>
@@ -356,7 +356,7 @@ include "teacher.php"
                 <br><br>
                 学院：<input type="text">
                 <br><br>
-                工号：<input type="text">
+                密码：<input type="text">
                 <br><br>
                 职务：<input type="text">
             </div>
@@ -502,5 +502,3 @@ include "teacher.php"
     });
 </script>
 </body>
-</html>
-﻿

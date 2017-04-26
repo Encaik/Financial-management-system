@@ -8,6 +8,14 @@
     <title>扬州大学云财务管理系系统</title>
     <link href="yun_studenthome.css" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="../jquery-3.2.0.js"></script>
+    <script type="text/javascript">
+        function f1(){
+            var tab1=document.getElementById("tab1");
+            var tab2=document.getElementById("tab2");
+            tab1.style.display=(tab1.style.display=="none"?"":"none");
+            tab2.style.display=(tab2.style.display=="none"?"":"none");
+        }
+    </script>
 </head>
 <body>
     <div class="tool">
@@ -868,16 +876,20 @@
                 <hr>
                 <div style="text-align: left;position: relative;left: 350px">
                     姓名：<input type="text" name="stu_name">
-                    <?php ?>
                     <br><br>
                     性别：<input type="radio" value="男" name="sex">男
                           <input type="radio" value="女" name="sex">女
                     <br><br>
                     学院：<input type="text" name="stu_xueyuan">
                     <br><br>
-                    学号：<input type="text" name="stu_id">
+                    密码：<input type="text" name="stu_pwd" minlength="6">
                     <br><br>
-                    财务编号：<input type="text" name="stu_bianhao">
+                    财务编号：<input type="text" name="stu_bianhao" maxlength="15" minlength="15">
+                    <br><br>
+<!--                    <form action="../doAction1.php" method="post" enctype="multipart/form-data">-->
+                        请上传头像图片：<input type="file"  name="myFile"  /><br/>
+                        <!--<input type="submit" value="上传"/>-->
+<!--                    </form>-->
                 </div>
                 <hr>
                 <input type="submit" value="上交" class="submit3_2">
