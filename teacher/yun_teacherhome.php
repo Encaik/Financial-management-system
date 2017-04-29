@@ -285,11 +285,8 @@ include "teacher.php"
             <p>经费申请</p>
             <hr>
             项目名称：<input class="inputtext" type="text" name="name"><br><br>
-
             申请人：&nbsp;&nbsp;&nbsp;<input class="inputtext" type="text" name="name"><br><br>
-
             申请金额：<input class="inputtext" type="text" name="name"><br><br>
-
             研究年限：<input class="inputtext" type="text" name="name"><br><br>
             研究类别：<input class="inputtext" type="text" name="name"><br><br>
             项目类别：<input class="inputtext" type="text" name="name"><br><br>

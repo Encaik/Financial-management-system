@@ -73,15 +73,17 @@
                 <div>
                     <p style="font-size: 2rem">编辑信息</p>
                     <hr>
-                    <p><label for="input4_1_2">序号:</label><input id="input4_1_2" type="text">&nbsp;&nbsp;<label for="input4_1_9">账户:</label><input id="input4_1_9"  type="text"></p>
-                    <p><label for="input4_1_3">类别:</label><input id="input4_1_3"  type="text">&nbsp;&nbsp;<label for="input4_1_4">姓名:</label><input id="input4_1_4"  type="text"></p>
-                    <p><label for="input4_1_5">性别:</label><input id="input4_1_5"  type="text"></p>
-                    <p><label for="input4_1_6">学号/工号:</label><input id="input4_1_6"  type="text"></p>
-                    <p><label for="input4_1_7">所在学院:</label><input id="input4_1_7"  type="text"></p>
-                    <p><label for="input4_1_8">账户余额:</label><input id="input4_1_8"  type="text"></p>
+                    <p>姓名：<?php echo $arr[0] ?></p>
+                    <p>性别：<?php echo $arr[1] ?></p>
+                    <p>学号：<?php echo $arr[2] ?></p>
+                    <p>学院：<?php echo $arr[4] ?></p>
+                    <p>金额：30元</p>
+                    <p>余额：<?php echo $arr[7] ?></p>
                     <hr>
-                    <input class="button" id="submit" type="button" value="确定">
+                    <form method="post">
+                    <input class="button" id="submit" type="submit" value="确定">
                     <input class="button" id="close" type="button" value="取消">
+                    </form>
                 </div>
             </div>
         </table>
@@ -92,11 +94,6 @@
     <div class="bar1_1_page">
         <table>
             <tr class="head">
-                <th colspan="2">全部标记为已查看</th>
-                <th colspan="2">查看选中项目详情</th>
-                <th colspan="2">反馈选中项目错误</th>
-            </tr>
-            <tr class="head">
                 <th></th>
                 <th>学院</th>
                 <th>学期</th>
@@ -104,166 +101,18 @@
                 <th>状态</th>
                 <th>备注</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>信息工程学院</td>
-                <td>2016—2017</td>
-                <td>2000</td>
-                <td>已交</td>
-                <td>学费</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>信息工程学院</td>
-                <td>2016—2017</td>
-                <td>1500</td>
-                <td>已交</td>
-                <td>住宿费</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>信息工程学院</td>
-                <td>2016—2017</td>
-                <td>1200</td>
-                <td>已交</td>
-                <td>重修费</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>信息工程学院</td>
-                <td>2016—2017</td>
-                <td>486</td>
-                <td>已交</td>
-                <td>书本费</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>16</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>17</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>18</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>19</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
+            <?php
+            for($i = 1;$i<=20;$i++){
+                echo "<tr>";
+                echo "<td>".$i."</td>";
+                echo "<td>".$arr[4]."</td>";
+                echo "<td>2016-2017</td>";
+                echo "<td>2000</td>";
+                echo "<td>已交</td>";
+                echo "<td>学费</td>";
+                echo "</tr>";
+            }
+            ?>
             <tr  class="head">
                 <th colspan="2">上一页</th>
                 <th colspan="2"><p>跳转至:<input type="text"></p></th>
@@ -273,183 +122,30 @@
     </div>
     <div class="bar1_2_page">
         <table>
-            <tr  class="head">
-                <th colspan="2">全部标记为已查看</th>
-                <th colspan="2">查看选中项目详情</th>
-                <th colspan="2">反馈选中项目错误</th>
-            </tr>
-            <tr  class="head">
-                <th>学号</th>
-                <th>姓名</th>
+            <tr class="head">
+                <th></th>
                 <th>学院</th>
                 <th>学期</th>
-                <th>费用</th>
+                <th>金额</th>
                 <th>状态</th>
+                <th>备注</th>
             </tr>
-            <tr>
-                <td>123456</td>
-                <td>张三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
+            <?php
+            for($i = 1;$i<=20;$i++){
+                echo "<tr>";
+                echo "<td>".$i."</td>";
+                echo "<td>".$arr[4]."</td>";
+                echo "<td>2016-2017</td>";
+                echo "<td>2000</td>";
+                echo "<td>已交</td>";
+                echo "<td>住宿费</td>";
+                echo "</tr>";
+            }
+            ?>
             <tr  class="head">
                 <th colspan="2">上一页</th>
                 <th colspan="2"><p>跳转至:<input type="text"></p></th>
-                <th colspan="2">反馈选中项目错误</th>
+                <th colspan="2">下一页</th>
             </tr>
         </table>
     </div>
@@ -470,10 +166,34 @@
     <div class="bar2_1_page">
         <table>
             <tr class="head">
-                <th colspan="2">全部标记为已查看</th>
-                <th colspan="2">查看选中项目详情</th>
-                <th colspan="2">反馈选中项目错误</th>
+                <th></th>
+                <th>学院</th>
+                <th>学期</th>
+                <th>金额</th>
+                <th>状态</th>
+                <th>备注</th>
             </tr>
+            <?php
+            for($i = 1;$i<=20;$i++){
+                echo "<tr>";
+                echo "<td>".$i."</td>";
+                echo "<td>".$arr[4]."</td>";
+                echo "<td>2016-2017</td>";
+                echo "<td>8000</td>";
+                echo "<td>已发放</td>";
+                echo "<td>贷款</td>";
+                echo "</tr>";
+            }
+            ?>
+            <tr  class="head">
+                <th colspan="2">上一页</th>
+                <th colspan="2"><p>跳转至:<input type="text"></p></th>
+                <th colspan="2">下一页</th>
+            </tr>
+        </table>
+    </div>
+    <div class="bar2_2_page">
+        <table>
             <tr class="head">
                 <th></th>
                 <th>学院</th>
@@ -482,382 +202,69 @@
                 <th>状态</th>
                 <th>备注</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>信息工程学院</td>
-                <td>2017年3月</td>
-                <td>3000</td>
-                <td>已发放</td>
-                <td>补助金</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>信息工程学院</td>
-                <td>2017年4月</td>
-                <td>3000</td>
-                <td>已发放</td>
-                <td>补助金</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>信息工程学院</td>
-                <td>2017年5月</td>
-                <td>3000</td>
-                <td>已发放</td>
-                <td>补助金</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>信息工程学院</td>
-                <td>2017年6月</td>
-                <td>3000</td>
-                <td>已发放</td>
-                <td>补助金</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>信息工程学院</td>
-                <td>2017年7月</td>
-                <td>3000</td>
-                <td>已发放</td>
-                <td>补助金</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>信息工程学院</td>
-                <td>2017年8月</td>
-                <td>3000</td>
-                <td>已发放</td>
-                <td>补助金</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>16</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>17</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>18</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>19</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
+            <?php
+            for($i = 1;$i<=20;$i++){
+                echo "<tr>";
+                echo "<td>".$i."</td>";
+                echo "<td>".$arr[4]."</td>";
+                echo "<td>2016-2017</td>";
+                echo "<td>3000</td>";
+                echo "<td>已发放</td>";
+                echo "<td>助学金</td>";
+                echo "</tr>";
+            }
+            ?>
             <tr  class="head">
                 <th colspan="2">上一页</th>
                 <th colspan="2"><p>跳转至:<input type="text"></p></th>
-                <th colspan="2">反馈选中项目错误</th>
-            </tr>
-        </table>
-    </div>
-    <div class="bar2_2_page">
-        <table>
-            <tr  class="head">
-                <th colspan="2">全部标记为已查看</th>
-                <th colspan="2">查看选中项目详情</th>
-                <th colspan="2">反馈选中项目错误</th>
-            </tr>
-            <tr  class="head">
-                <th>学号</th>
-                <th>姓名</th>
-                <th>学院</th>
-                <th>学期</th>
-                <th>费用</th>
-                <th>状态</th>
-            </tr>
-            <tr>
-                <td>123456</td>
-                <td>张三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr>
-                <td>123457</td>
-                <td>李四三</td>
-                <td>信息工程学院</td>
-                <td>2017—2018</td>
-                <td>5400</td>
-                <td>已交</td>
-            </tr>
-            <tr  class="head">
-                <th colspan="2">上一页</th>
-                <th colspan="2"><p>跳转至:<input type="text"></p></th>
-                <th colspan="2">反馈选中项目错误</th>
+                <th colspan="2">下一页</th>
             </tr>
         </table>
     </div>
     <div class="bar2_3_page">
         <div class="yue">
-            <form>
+            <?php
+            if($arr[8] == 1){
+                $str = "select * from porstu WHERE stu_id='$user'";
+                $result = mysql_query($str);
+                $por = mysql_fetch_row($result);
+                echo "<p>贫困生信息表</p><hr><div style=\"text - align: left;position: relative;left: 0\">";
+                echo "<h4>姓名：".$por[1]."</h4><h4>民族：".$por[2]."</h4>
+                    <h4>籍贯：".$por[3]."<h4><h4>政治面貌：".$por[4]."</h4>
+                    <h4>性别：".$por[5]."</h4>
+                    <h4>身份证号：".$por[6]."</h4>
+                    <h4>家庭住址：".$por[7]."</h4>
+                    <h4>家庭收入：".$por[8]."</h4>
+                    <h4>个人简述：".$por[9]."</h4></div><hr>";
+            }else{
+                echo
+                "<form  action=\"./Por.php\" method=\"post\">
                 <p>贫困生申请表</p>
                 <hr>
-                <div style="text-align: left;position: relative;left: 200px">
-                    <label for="get_stu_name">姓名：</label><input type="text" id="get_stu_name">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="get_stu_minzu">民族：</label><input type="text" id="get_stu_minzu">
+                <div style=\"text-align: left;position: relative;left: 200px\">
+                    <label for=\"get_stu_name\">姓名：</label><input type=\"text\" id=\"get_stu_name\" name=\"por_name\">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for=\"get_stu_minzu\">民族：</label><input type=\"text\" id=\"get_stu_minzu\" name=\"por_mingzu\">
                     <br><br>
-                    <label for="get_stu_name">籍贯：</label><input type="text">
-                    &nbsp;&nbsp;&nbsp;&nbsp;<label for="get_stu_name">政治面貌：</label><input type="text">
+                    <label for=\"get_stu_name\">籍贯：</label><input type=\"text\" name=\"por_jiguan\">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<label for=\"get_stu_name\">政治面貌：</label><input type=\"text\" name=\"por_zhengzhi\">
                     <br><br>
-                    性别：<input type="radio" value="男" name="sex">男
-                          <input type="radio" value="女" name="sex">女
+                    性别：<input type=\"radio\" value=\"男\" name=\"por_sex\">男
+                          <input type=\"radio\" value=\"女\" name=\"por_sex\">女
                     <br><br>
-                    身份证号：<input type="text">
+                    身份证号：<input type=\"text\"  name=\"por_idcard\">
                     <br><br>
-                    家庭住址：<input type="text">
+                    家庭住址：<input type=\"text\" name=\"por_zhuzhi\">
                     <br><br>
-                    家庭收入：<input type="text">
+                    家庭收入：<input type=\"text\" name=\"por_shouru\">
                     <br><br>
-                    个人简述：<textarea rows="5" cols="30" style="resize: none"></textarea>
+                    个人简述：<textarea rows=\"5\" cols=\"30\" name=\"por_jianshu\" style=\"resize: none\"></textarea>
                 </div>
                 <hr>
-                <input type="submit" value="上交" class="submit2_3">
-                <input type="submit" value="取消" class="submit2_3">
-            </form>
+                <input type=\"submit\" value=\"上交\" class=\"submit2_3\">
+                <input type=\"button\" value=\"取消\" class=\"submit2_3\" onclick=\"reset();\">
+            </form>";
+            }
+            ?>
         </div>
     </div>
     <div class="bar3_1_page">
@@ -912,6 +319,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar1_1").click(function () {
             $(".bar_page").hide();
@@ -923,6 +331,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar1_2").click(function () {
             $(".bar_page").hide();
@@ -934,6 +343,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar1_3").click(function () {
             $(".bar_page").hide();
@@ -945,6 +355,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar2_1").click(function () {
             $(".bar_page").hide();
@@ -956,6 +367,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar2_2").click(function () {
             $(".bar_page").hide();
@@ -967,6 +379,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar2_3").click(function () {
             $(".bar_page").hide();
@@ -978,6 +391,7 @@
             $(".bar2_3_page").show();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar3_1").click(function () {
             $(".bar_page").hide();
@@ -989,6 +403,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").show();
             $(".bar3_2_page").hide();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar3_2").click(function () {
             $(".bar_page").hide();
@@ -1000,6 +415,7 @@
             $(".bar2_3_page").hide();
             $(".bar3_1_page").hide();
             $(".bar3_2_page").show();
+            $(".bar_page .window").css("display","none");
         });
         $("#bar3_3").click(function () {
             self.location='.././yun_login.html';
@@ -1025,10 +441,10 @@
             $(".sonBar3 p").slideToggle("1500");
         });
         $(".baoming").click(function () {
-            $(".window").css("display","block");
+            $(".bar_page .window").css("display","block");
         });
         $("#close,#submit").click(function () {
-            $(".window").css("display","none");
+            $(".bar_page .window").css("display","none");
         });
     </script>
 </body>
