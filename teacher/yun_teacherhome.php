@@ -15,7 +15,7 @@ include "teacher.php"
         <img src="../Logo/扬大横_白.png" alt="Logo">
     </div>
     <div class="user">
-        <img src="../image/user.png">
+        <img src="../image/<?PHP echo $arr[6] ?>">
         <p><?PHP echo $arr[0] ?>,您好</p>
         <p>欢迎进入云财务管理系统</p>
     </div>
@@ -345,28 +345,29 @@ include "teacher.php"
 
 <div class="bar4_2_page">
     <div class="yue">
-        <form>
+        <form action="./Update.php" method="post">
             <p>修改信息</p>
             <hr>
             <div style="text-align: left;position: relative;left: 350px">
-                姓名：<input type="text">
+                姓名：<input type="text" name="tea_name">
                 <br><br>
                 性别：<input type="radio" value="男" name="sex">男
                 <input type="radio" value="女" name="sex">女
                 <br><br>
-                学院：<input type="text">
+                学院：<input type="text" name="tea_xueyuan">
                 <br><br>
-                密码：<input type="text">
+                密码：<input type="text" name="tea_pwd">
                 <br><br>
-                职务：<input type="text">
+                职务：<input type="text" name="tea_zhiwu">
+                <br><br>
+                请上传头像图片：<input type="file"  name="tea_pic"><br/>
             </div>
             <hr>
             <input class="button" type="submit" value="上交" >
-            <input class="button" type="submit" value="取消" >
+            <input class="button" type="button" value="取消"  onclick="reset();">
         </form>
     </div>
 </div>
-
 <script language="JavaScript" type="text/javascript">
     $(".bar").click(function () {
         $(".sonBar2 p").slideUp("1500");

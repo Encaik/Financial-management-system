@@ -8,14 +8,6 @@
     <title>扬州大学云财务管理系系统</title>
     <link href="yun_studenthome.css" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="../jquery-3.2.0.js"></script>
-    <script type="text/javascript">
-        function f1(){
-            var tab1=document.getElementById("tab1");
-            var tab2=document.getElementById("tab2");
-            tab1.style.display=(tab1.style.display=="none"?"":"none");
-            tab2.style.display=(tab2.style.display=="none"?"":"none");
-        }
-    </script>
 </head>
 <body>
     <div class="tool">
@@ -23,7 +15,7 @@
             <img src="../Logo/扬大横_白.png" alt="Logo">
         </div>
         <div class="user">
-            <img src="../image/user.png">
+            <img src="../image/<?PHP echo $arr[6] ?>">
             <p><?PHP echo $arr[0] ?>,您好</p>
             <p>欢迎进入云财务管理系统</p>
         </div>
@@ -60,23 +52,38 @@
     <div class="bar_page">
         <table>
             <tr>
-                <td>CET4</td>
-                <td>CET6</td>
-                <td>雅思</td>
-                <td>GRE</td>
+                <td class="baoming">CET4</td>
+                <td class="baoming">CET6</td>
+                <td class="baoming">雅思</td>
+                <td class="baoming">GRE</td>
             </tr>
             <tr>
-                <td>思科</td>
-                <td>计算机<br>二级</td>
-                <td>计算机<br>三级</td>
-                <td>计算机<br>四级</td>
+                <td class="baoming">思科</td>
+                <td class="baoming">计算机<br>二级</td>
+                <td class="baoming">计算机<br>三级</td>
+                <td class="baoming">计算机<br>四级</td>
             </tr>
             <tr>
-                <td>会计证</td>
-                <td>MME</td>
-                <td>全国<br>普通话</td>
-                <td>工程师<br>证书</td>
+                <td class="baoming">会计证</td>
+                <td class="baoming">MME</td>
+                <td class="baoming">全国<br>普通话</td>
+                <td class="baoming">工程师<br>证书</td>
             </tr>
+            <div class="window">
+                <div>
+                    <p style="font-size: 2rem">编辑信息</p>
+                    <hr>
+                    <p><label for="input4_1_2">序号:</label><input id="input4_1_2" type="text">&nbsp;&nbsp;<label for="input4_1_9">账户:</label><input id="input4_1_9"  type="text"></p>
+                    <p><label for="input4_1_3">类别:</label><input id="input4_1_3"  type="text">&nbsp;&nbsp;<label for="input4_1_4">姓名:</label><input id="input4_1_4"  type="text"></p>
+                    <p><label for="input4_1_5">性别:</label><input id="input4_1_5"  type="text"></p>
+                    <p><label for="input4_1_6">学号/工号:</label><input id="input4_1_6"  type="text"></p>
+                    <p><label for="input4_1_7">所在学院:</label><input id="input4_1_7"  type="text"></p>
+                    <p><label for="input4_1_8">账户余额:</label><input id="input4_1_8"  type="text"></p>
+                    <hr>
+                    <input class="button" id="submit" type="button" value="确定">
+                    <input class="button" id="close" type="button" value="取消">
+                </div>
+            </div>
         </table>
         <div class="last">
             <p>版权所有©2017 扬州大学</p>
@@ -453,8 +460,8 @@
             <div class="yue_text" style="position: relative;left: 5px">
                 <p>姓名：<?PHP echo $arr[0]?></p>
                 <p>学号：<?PHP echo $arr[2]?></p>
-                <p>账户：</p>
-                <p>金额：</p>
+                <p>账户类型：电子账户</p>
+                <p>金额：<?PHP echo $arr[7]?></p>
             </div>
             <hr>
             <br>
@@ -871,7 +878,7 @@
     </div>
     <div class="bar3_2_page">
         <div class="yue">
-            <form action="Update.php" method="post">
+            <form action="./Update.php" method="post">
                 <p>修改信息</p>
                 <hr>
                 <div style="text-align: left;position: relative;left: 350px">
@@ -886,14 +893,11 @@
                     <br><br>
                     财务编号：<input type="text" name="stu_bianhao" maxlength="15" minlength="15">
                     <br><br>
-<!--                    <form action="../doAction1.php" method="post" enctype="multipart/form-data">-->
-                        请上传头像图片：<input type="file"  name="myFile"  /><br/>
-                        <!--<input type="submit" value="上传"/>-->
-<!--                    </form>-->
+                    请上传头像图片：<input type="file"  name="stu_pic"><br/>
                 </div>
                 <hr>
                 <input type="submit" value="上交" class="submit3_2">
-                <input type="submit" value="取消" class="submit3_2">
+                <input type="button" value="取消" class="submit3_2" onclick="reset();">
             </form>
         </div>
     </div>
@@ -1019,6 +1023,12 @@
             $(".sonBar1 p").slideUp("1500");
             $(".sonBar2 p").slideUp("1500");
             $(".sonBar3 p").slideToggle("1500");
+        });
+        $(".baoming").click(function () {
+            $(".window").css("display","block");
+        });
+        $("#close,#submit").click(function () {
+            $(".window").css("display","none");
         });
     </script>
 </body>
