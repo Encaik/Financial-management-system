@@ -6,6 +6,8 @@
             $str = "select * from student WHERE stu_id='$user'";
             $result = mysql_query($str);
             $arr = mysql_fetch_row($result);
+            $str = "create table if not exists stu".$arr[2]."(title varchar(100),price varchar(50),time timestamp)";
+            mysql_query($str);
         }
     }
 ?>

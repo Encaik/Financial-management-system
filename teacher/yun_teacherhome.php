@@ -324,11 +324,11 @@ include "teacher.php"
 </div>
 
 <div class="bar4_1_page">
-    <div class="yue">
+    <div class="yue" style="position: relative;top: -30px">
         <form>
             <p>个人信息</p>
             <hr>
-            <div style="text-align: left;padding-left:300px;position:relative;left: 25px">
+            <div style="text-align: left;padding-left:300px;position:relative;left: 25px;">
                 <p>姓名：<?php echo $arr[0] ?></p>
                 <p>性别：<?php echo $arr[3] ?></p>
                 <p>学院：<?php echo $arr[4] ?></p>

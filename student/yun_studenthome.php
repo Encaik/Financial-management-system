@@ -51,41 +51,37 @@
     </div>
     <div class="bar_page">
         <table>
-            <tr>
-                <td class="baoming">CET4</td>
-                <td class="baoming">CET6</td>
-                <td class="baoming">雅思</td>
-                <td class="baoming">GRE</td>
-            </tr>
-            <tr>
-                <td class="baoming">思科</td>
-                <td class="baoming">计算机<br>二级</td>
-                <td class="baoming">计算机<br>三级</td>
-                <td class="baoming">计算机<br>四级</td>
-            </tr>
-            <tr>
-                <td class="baoming">会计证</td>
-                <td class="baoming">MME</td>
-                <td class="baoming">全国<br>普通话</td>
-                <td class="baoming">工程师<br>证书</td>
-            </tr>
-            <div class="window">
+            <?php
+            $str = "select * from stu_first";
+            $result = mysql_query($str);
+            for($i = 1;$i<=3;$i++){
+                echo "<tr>";
+                for($j = 1;$j<=4;$j++){
+                    $fir = mysql_fetch_row($result);
+                    echo "<td  id=\"tr_".$i."_td_".$j."\" class=\"baoming\" onclick=\"stu_first('.$i.','.$j.')\">".$fir[0]."</td>";
+                    echo"<div class=\"window".$i."_".$j."\">
                 <div>
-                    <p style="font-size: 2rem">编辑信息</p>
+                    <p style=\"font-size: 2rem\">".$fir[0]."</p>
                     <hr>
-                    <p>姓名：<?php echo $arr[0] ?></p>
-                    <p>性别：<?php echo $arr[1] ?></p>
-                    <p>学号：<?php echo $arr[2] ?></p>
-                    <p>学院：<?php echo $arr[4] ?></p>
-                    <p>金额：30元</p>
-                    <p>余额：<?php echo $arr[7] ?></p>
+                    <p>姓名：".$arr[0]."</p>
+                    <p>性别：".$arr[1]."</p>
+                    <p>学号：".$arr[2]."</p>
+                    <p>学院：".$arr[4]."</p>
+                    <p>时间：".$fir[1]."</p>
+                    <p>金额：".$fir[2]."</p>    
                     <hr>
-                    <form method="post">
-                    <input class="button" id="submit" type="submit" value="确定">
-                    <input class="button" id="close" type="button" value="取消">
+                    <form action=\"./Jiaofei.php\" method=\"post\">
+                    <input type=\"text\" value=\"".$fir[0]."\" name=\"title\" style=\"display: none\">
+                    <input type=\"text\" value=\"".$fir[2]."\" name=\"price\" style=\"display: none\">
+                    <input class=\"button\" id=\"submit".$i."_".$j."\" type=\"submit\" value=\"确定\">
+                    <input class=\"button\" id=\"close".$i."_".$j."\" type=\"button\" value=\"取消\">
                     </form>
                 </div>
-            </div>
+            </div>";
+                }
+                echo "</tr>";
+            }
+            ?>
         </table>
         <div class="last">
             <p>版权所有©2017 扬州大学</p>
@@ -113,7 +109,7 @@
                 echo "</tr>";
             }
             ?>
-            <tr  class="head">
+            <tr  class="foot">
                 <th colspan="2">上一页</th>
                 <th colspan="2"><p>跳转至:<input type="text"></p></th>
                 <th colspan="2">下一页</th>
@@ -125,24 +121,25 @@
             <tr class="head">
                 <th></th>
                 <th>学院</th>
-                <th>学期</th>
+                <th>时间</th>
                 <th>金额</th>
-                <th>状态</th>
                 <th>备注</th>
             </tr>
             <?php
-            for($i = 1;$i<=20;$i++){
+            $str = "select * from stu".$arr[2]."";
+            $bol = "mysql_num_rows($result)";
+            $result = mysql_query($str);
+            for($i = 1;$mon = mysql_fetch_row($result);$i++){
                 echo "<tr>";
                 echo "<td>".$i."</td>";
                 echo "<td>".$arr[4]."</td>";
-                echo "<td>2016-2017</td>";
-                echo "<td>2000</td>";
-                echo "<td>已交</td>";
-                echo "<td>住宿费</td>";
+                echo "<td>".$mon[2]."</td>";
+                echo "<td>".$mon[1]."</td>";
+                echo "<td>".$mon[0]."</td>";
                 echo "</tr>";
             }
             ?>
-            <tr  class="head">
+            <tr  class="foot">
                 <th colspan="2">上一页</th>
                 <th colspan="2"><p>跳转至:<input type="text"></p></th>
                 <th colspan="2">下一页</th>
@@ -229,16 +226,16 @@
                 $result = mysql_query($str);
                 $por = mysql_fetch_row($result);
                 echo "<p>贫困生信息表</p><hr><div style=\"text - align: left;position: relative;left: 0\">";
-                echo "<h4>姓名：".$por[1]."</h4><h4>民族：".$por[2]."</h4>
-                    <h4>籍贯：".$por[3]."<h4><h4>政治面貌：".$por[4]."</h4>
-                    <h4>性别：".$por[5]."</h4>
-                    <h4>身份证号：".$por[6]."</h4>
-                    <h4>家庭住址：".$por[7]."</h4>
-                    <h4>家庭收入：".$por[8]."</h4>
-                    <h4>个人简述：".$por[9]."</h4></div><hr>";
+                echo "<h2>姓名：".$por[1]."</h2>
+                    <h2>民族：".$por[2]."</h2>
+                    <h2>籍贯：".$por[3]."</h2>
+                    <h2>政治面貌：".$por[4]."</h2>
+                    <h2>性别：".$por[5]."</h2>
+                    <h2>身份证号：".$por[6]."</h2>
+                    <h2>家庭住址：".$por[7]."</h2></div><hr>";
             }else{
                 echo
-                "<form  action=\"./Por.php\" method=\"post\">
+                "<form action=\"./Por.php\" method=\"post\">
                 <p>贫困生申请表</p>
                 <hr>
                 <div style=\"text-align: left;position: relative;left: 200px\">
@@ -288,7 +285,7 @@
             <form action="./Update.php" method="post">
                 <p>修改信息</p>
                 <hr>
-                <div style="text-align: left;position: relative;left: 350px">
+                <div style="font-size:25px;text-align: left;position: relative;left: 350px">
                     姓名：<input type="text" name="stu_name">
                     <br><br>
                     性别：<input type="radio" value="男" name="sex">男
@@ -440,11 +437,77 @@
             $(".sonBar2 p").slideUp("1500");
             $(".sonBar3 p").slideToggle("1500");
         });
-        $(".baoming").click(function () {
-            $(".bar_page .window").css("display","block");
+        $("#tr_1_td_1").click(function () {
+            $(".bar_page .window1_1").css("display","block");
         });
-        $("#close,#submit").click(function () {
-            $(".bar_page .window").css("display","none");
+        $("#close1_1,#submit1_1").click(function () {
+            $(".bar_page .window1_1").css("display","none");
+        });
+        $("#tr_1_td_2").click(function () {
+            $(".bar_page .window1_2").css("display","block");
+        });
+        $("#close1_2,#submit1_2").click(function () {
+            $(".bar_page .window1_2").css("display","none");
+        });
+        $("#tr_1_td_3").click(function () {
+            $(".bar_page .window1_3").css("display","block");
+        });
+        $("#close1_3,#submit1_3").click(function () {
+            $(".bar_page .window1_3").css("display","none");
+        });
+        $("#tr_1_td_4").click(function () {
+            $(".bar_page .window1_4").css("display","block");
+        });
+        $("#close1_4,#submit1_4").click(function () {
+            $(".bar_page .window1_4").css("display","none");
+        });
+        $("#tr_2_td_1").click(function () {
+            $(".bar_page .window2_1").css("display","block");
+        });
+        $("#close2_1,#submit2_1").click(function () {
+            $(".bar_page .window2_1").css("display","none");
+        });
+        $("#tr_2_td_2").click(function () {
+            $(".bar_page .window2_2").css("display","block");
+        });
+        $("#close2_2,#submit2_2").click(function () {
+            $(".bar_page .window2_2").css("display","none");
+        });
+        $("#tr_2_td_3").click(function () {
+            $(".bar_page .window2_3").css("display","block");
+        });
+        $("#close2_3,#submit2_3").click(function () {
+            $(".bar_page .window2_3").css("display","none");
+        });
+        $("#tr_2_td_4").click(function () {
+            $(".bar_page .window2_4").css("display","block");
+        });
+        $("#close2_4,#submit2_4").click(function () {
+            $(".bar_page .window2_4").css("display","none");
+        });
+        $("#tr_3_td_1").click(function () {
+            $(".bar_page .window3_1").css("display","block");
+        });
+        $("#close3_1,#submit3_1").click(function () {
+            $(".bar_page .window3_1").css("display","none");
+        });
+        $("#tr_3_td_2").click(function () {
+            $(".bar_page .window3_2").css("display","block");
+        });
+        $("#close3_2,#submit3_2").click(function () {
+            $(".bar_page .window3_2").css("display","none");
+        });
+        $("#tr_3_td_3").click(function () {
+            $(".bar_page .window3_3").css("display","block");
+        });
+        $("#close3_3,#submit3_3").click(function () {
+            $(".bar_page .window3_3").css("display","none");
+        });
+        $("#tr_3_td_4").click(function () {
+            $(".bar_page .window3_4").css("display","block");
+        });
+        $("#close3_4,#submit3_4").click(function () {
+            $(".bar_page .window3_4").css("display","none");
         });
     </script>
 </body>

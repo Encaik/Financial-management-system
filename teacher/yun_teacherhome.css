@@ -118,15 +118,14 @@ body {
     background-color: #ebebeb;
     text-align: center;
     position: relative;
-    top: -12px;
-    z-index: -99;
+    top: -13px;
+    z-index: -1;
 }
 .bar1_page,.bar2_1_page,.bar2_2_page,.bar3_1_page,.bar3_2_page,.bar3_3_page,.bar4_1_page,.bar4_2_page{
     float: right;
     width: 80%;
     display: none;
 }
-
 .bar1_page,.bar2_2_page,.bar3_3_page{
     border: 0 solid #ebebeb;
 
@@ -143,8 +142,6 @@ body {
     background-color: rgba(212, 213, 214, 0.5);
     height: 28px;
 }
-
-
 .bar1_page table,.bar2_2_page table,.bar3_1_page table,.bar3_3_page table{
     margin: 0;
     border-collapse: collapse;
@@ -158,11 +155,6 @@ body {
     height:30px;
     width:100px;
 }
-
-
-
-
-
 input[type="text"] {
     border-radius: 5px;
     border: solid 1px #bb1a1b;

@@ -49,7 +49,7 @@ body {
     position: relative;
     padding-bottom: 45px;
 }
-.window{
+.window1_1,.window1_2,.window1_3,.window1_4,.window2_1,.window2_2,.window2_3,.window2_4,.window3_1,.window3_2,.window3_3,.window3_4{
     padding: 0 2rem;
     border: 0 solid gainsboro;
     background-color: rgba(241, 241, 241, 0.93);
@@ -113,13 +113,15 @@ body {
     background-size: 250px 146px;
     text-align: center;
     vertical-align: middle;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
 }
 .bar_page td:hover{
     border: 2px solid rgba(0, 143, 66, 0.5);
     color: #006231;
-    font-size: 52px;
+    font-size: 60px;
+    position: relative;
+    top: 2px;
 }
 .bar_page table{
     margin: 45px;
@@ -149,6 +151,12 @@ textarea{
     background-color: rgb(0, 143, 66);
     height: 35px;
 }
+.foot th{
+    width: 1000px;
+    border: 2px solid rgba(156, 156, 156, 0);
+    background-color: rgb(0, 143, 66);
+    height: 35px;
+}
 .head th:hover{
     width: 1000px;
     border: 2px solid rgba(156, 156, 156, 0);
@@ -171,25 +179,25 @@ textarea{
 .bar1_3_page .yue{
     margin: 100px 80px;
     padding: 60px;
-    border: solid 0px;
+    border: solid 0;
     border-radius: 25px;
     background-color: rgba(226,234,235,0.53);
 }
 .bar2_3_page .yue{
     margin: 60px 80px;
     padding: 60px;
-    border: solid 0px;
+    border: solid 0;
     border-radius: 25px;
     background-color: rgba(226,234,235,0.53);
 }
 .bar3_1_page .yue,.bar3_2_page .yue{
     margin: 60px 80px;
     padding: 60px;
-    border: solid 0px;
+    border: solid 0;
     border-radius: 25px;
     background-color: rgba(226,234,235,0.53);
 }
-.bar2_3_page .yue .submit2_3,.bar3_2_page .yue .submit3_2,.window .button{
+.bar2_3_page .yue .submit2_3,.bar3_2_page .yue .submit3_2,.button{
     margin: 0 50px;
     width: 90px;
     height: 35px;
@@ -207,11 +215,15 @@ textarea{
     margin: 0;
     padding: 0;
     font-size: 30px;
-    font-size: 30px;
     line-height: 75px;
+}
+h2{
+    font-size: 25px;
 }
 /*各页面初始化隐藏*/
 .bar1_1_page,.bar1_2_page,.bar1_3_page,.bar2_1_page,.bar2_2_page,.bar2_3_page,.bar3_1_page,.bar3_2_page{
+    margin: 0;
+    padding: 0;
     float: right;
     width: 80%;
     display: none;
@@ -222,5 +234,5 @@ textarea{
     background-color: #ebebeb;
     text-align: center;
     position: relative;
-    top: -5px;
+    top: -30px;
 }
