@@ -5,7 +5,7 @@ include "teacher.php"
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>扬州大学云财务管理系系统</title>
+    <title>扬州大学云财务管理系统</title>
     <link href="yun_teacherhome.css" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="../jquery-3.2.0.js"></script>
 </head>
@@ -66,71 +66,86 @@ include "teacher.php"
         </tr>
         <tr>
             <th>第一小节</th>
-            <td rowspan="2"></td>
-            <td rowspan="2">Java程序设计I<br>扬子津西校区<br>教室：011524</td>
-            <td rowspan="2">高等数学I(下册)<br>扬子津西校区<br>教室：012512</td>
-            <td rowspan="2">线性代数II<br>扬子津西校区<br>教室：012513</td>
-            <td rowspan="2">Java程序设计I<br>扬子津西校区<br>教室：011524</td>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
+            <?php
+                for($i=1;$i<=7;$i++){
+                    $str = "select * from teales" . $arr[1] . " WHERE day = $i and jie = '1'";
+                    $result = mysql_query($str);
+                    $les = mysql_fetch_row($result);
+                    echo "<td rowspan=\"2\">".$les[0]."<br>".$les[1]."<br>".$les[2]."</td>";
+                }
+            ?>
         </tr>
         <tr>
             <th>第二小节</th>
         </tr>
         <tr>
             <th>第三小节</th>
-            <td rowspan="2">高等数学I(下册)<br>扬子津西校区<br>教室：012512</td>
-            <td rowspan="2">体育II<br>扬子津西校区<br>西区操场</td>
-            <td rowspan="2">综合英语II(口语)<br>扬子津西校区<br>教室：011301</td>
-            <td rowspan="2">Java程序设计实验<br>扬子津西校区<br>信息中心N206</td>
-            <td rowspan="3">经济学<br>扬子津西校区<br>教室：011301</td>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
+            <?php
+            for($i=1;$i<=7;$i++){
+                $str = "select * from teales" . $arr[1] . " WHERE day = $i and jie = '2'";
+                $result = mysql_query($str);
+                $les = mysql_fetch_row($result);
+                if($les[5]==3){
+                    echo "<td rowspan=\"3\">".$les[0]."<br>".$les[1]."<br>".$les[2]."</td>";
+                }else{
+                    echo "<td rowspan=\"2\">".$les[0]."<br>".$les[1]."<br>".$les[2]."</td>";
+                }
+            }
+            ?>
         </tr>
         <tr>
             <th>第四小节</th>
         </tr>
         <tr>
             <th>第五小节</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <?php
+            $str = "select * from teales" . $arr[1] . " WHERE jie = '2' and shichang = '3'";
+            $result = mysql_query($str);
+            $les = mysql_num_rows($result);
+            for(;7-$les;$les++){
+                echo "<td></td>";
+            }
+            ?>
         </tr>
         <tr>
             <th>第六小节</th>
-            <td rowspan="3">会计学<br>扬子津西校区<br>教室：011315</td>
-            <td rowspan="2">系统科学与系统工程概论<br>扬子津西校区<br>教室：011310</td>
-            <td rowspan="2">军事理论<br>扬子津西校区<br>教室：012312</td>
-            <td rowspan="2">网站设计<br>扬子津西校区<br>教室：012320</td>
-            <td rowspan="3">计算机硬件基础<br>扬子津西校区<br>教室：011514</td>
-            <td></td>
-            <td></td>
+            <?php
+            for($i=1;$i<=7;$i++){
+                $str = "select * from teales" . $arr[1] . " WHERE day = $i and jie = '3'";
+                $result = mysql_query($str);
+                $les = mysql_fetch_row($result);
+                if($les[5]==3){
+                    echo "<td rowspan=\"3\">".$les[0]."<br>".$les[1]."<br>".$les[2]."</td>";
+                }else{
+                    echo "<td rowspan=\"2\">".$les[0]."<br>".$les[1]."<br>".$les[2]."</td>";
+                }
+            }
+            ?>
         </tr>
         <tr>
             <th>第七小节</th>
-            <td></td>
-            <td></td>
         </tr>
         <tr>
             <th>第八小节</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <?php
+            $str = "select * from teales" . $arr[1] . " WHERE jie = '3' and shichang = '3'";
+            $result = mysql_query($str);
+            $les = mysql_num_rows($result);
+            for(;7-$les;$les++){
+                echo "<td></td>";
+            }
+            ?>
         </tr>
         <tr>
             <th>第九小节</th>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
-            <td rowspan="2">综合英语II(网页)<br>扬子津西校区<br>教室：011301</td>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
+            <?php
+            for($i=1;$i<=7;$i++){
+                $str = "select * from teales" . $arr[1] . " WHERE day = $i and jie = '4'";
+                $result = mysql_query($str);
+                $les = mysql_fetch_row($result);
+                echo "<td rowspan=\"2\">".$les[0]."<br>".$les[1]."<br>".$les[2]."</td>";
+            }
+            ?>
         </tr>
         <tr>
             <th>第十小节</th>

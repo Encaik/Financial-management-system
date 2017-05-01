@@ -5,7 +5,7 @@ include "admin.php"
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>扬州大学云财务管理系系统</title>
+    <title>扬州大学云财务管理系统</title>
     <link href="./yun_adminhome.css" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="../jquery-3.2.0.js"></script>
 </head>

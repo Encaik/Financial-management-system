@@ -195,7 +195,18 @@ textarea{
     padding: 60px;
     border: solid 0;
     border-radius: 25px;
-    background-color: rgba(226,234,235,0.53);
+    background-color: rgba(226, 234, 235, 0.53);
+}
+.bar2_1_page .yue,.bar2_2_page .yue{
+    margin: 60px 80px;
+    padding: 60px;
+    border: solid 0;
+    line-height: 300px;
+    font-size: 30px;
+    border-radius: 25px;
+    background-color: rgba(226, 234, 235, 0.53);
+    position: relative;
+    top: 50px;
 }
 .bar2_3_page .yue .submit2_3,.bar3_2_page .yue .submit3_2,.button{
     margin: 0 50px;

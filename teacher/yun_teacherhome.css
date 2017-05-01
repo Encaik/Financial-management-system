@@ -109,7 +109,7 @@ body {
 .bar_page table{
     text-align: center;
     vertical-align: middle;
-    padding: 22px 28px;
+    padding: 36px 28px;
     border-spacing: 1px;
 }
 .last{
@@ -117,8 +117,6 @@ body {
     padding-top: 0;
     background-color: #ebebeb;
     text-align: center;
-    position: relative;
-    top: -13px;
     z-index: -1;
 }
 .bar1_page,.bar2_1_page,.bar2_2_page,.bar3_1_page,.bar3_2_page,.bar3_3_page,.bar4_1_page,.bar4_2_page{
@@ -172,21 +170,21 @@ textarea{
 .bar2_1_page .yue{
     margin: 40px 80px;
     padding: 50px;
-    border: solid 0px;
+    border: solid 0;
     border-radius: 25px;
     background-color: rgba(226,234,235,0.53);
 }
 .bar3_2_page .yue{
     margin: 70px 80px;
     padding: 50px;
-    border: solid 0px;
+    border: solid 0;
     border-radius: 25px;
     background-color: rgba(226,234,235,0.53);
 }
 .bar4_1_page .yue,.bar4_2_page .yue{
     margin: 100px 80px;
     padding: 60px;
-    border: solid 0px;
+    border: solid 0;
     border-radius: 25px;
     background-color: rgba(226,234,235,0.53);
 }
@@ -194,7 +192,6 @@ textarea{
 .bar2_1_page p,.bar3_2_page p,.bar4_1_page p,.bar4_2_page p{
     margin: 0;
     padding: 0;
-    font-size: 30px;
     font-size: 30px;
     line-height: 75px;
 }

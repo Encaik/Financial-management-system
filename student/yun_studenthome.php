@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>扬州大学云财务管理系系统</title>
+    <title>扬州大学云财务管理系统</title>
     <link href="yun_studenthome.css" rel="stylesheet" type="text/css" >
     <script type="text/javascript" src="../jquery-3.2.0.js"></script>
 </head>
@@ -98,14 +98,16 @@
                 <th>备注</th>
             </tr>
             <?php
-            for($i = 1;$i<=20;$i++){
+            $str = "select * from stu".$arr[2]." WHERE title = '学费'";
+            $result = mysql_query($str);
+            for($i = 1;$mon = mysql_fetch_row($result);$i++){
                 echo "<tr>";
                 echo "<td>".$i."</td>";
                 echo "<td>".$arr[4]."</td>";
-                echo "<td>2016-2017</td>";
-                echo "<td>2000</td>";
+                echo "<td>".$mon[2]."</td>";
+                echo "<td>".$mon[1]."</td>";
                 echo "<td>已交</td>";
-                echo "<td>学费</td>";
+                echo "<td>".$mon[0]."</td>";
                 echo "</tr>";
             }
             ?>
@@ -126,8 +128,7 @@
                 <th>备注</th>
             </tr>
             <?php
-            $str = "select * from stu".$arr[2]."";
-            $bol = "mysql_num_rows($result)";
+            $str = "select * from stu".$arr[2]." WHERE title != '学费'";
             $result = mysql_query($str);
             for($i = 1;$mon = mysql_fetch_row($result);$i++){
                 echo "<tr>";
@@ -161,62 +162,78 @@
         </div>
     </div>
     <div class="bar2_1_page">
-        <table>
-            <tr class="head">
+        <?php
+        if($arr[8] == 1) {
+            echo
+            "<table>
+            <tr class=\"head\">
                 <th></th>
                 <th>学院</th>
                 <th>学期</th>
                 <th>金额</th>
                 <th>状态</th>
                 <th>备注</th>
-            </tr>
-            <?php
-            for($i = 1;$i<=20;$i++){
+            </tr>";
+            $str = "select * from stu" . $arr[2] . " WHERE title = '助学贷款'";
+            $result = mysql_query($str);
+            for ($i = 1; $mon = mysql_fetch_row($result); $i++) {
                 echo "<tr>";
-                echo "<td>".$i."</td>";
-                echo "<td>".$arr[4]."</td>";
-                echo "<td>2016-2017</td>";
-                echo "<td>8000</td>";
+                echo "<td>" . $i . "</td>";
+                echo "<td>" . $arr[4] . "</td>";
+                echo "<td>" . $mon[2] . "</td>";
+                echo "<td>" . $mon[1] . "</td>";
                 echo "<td>已发放</td>";
-                echo "<td>贷款</td>";
+                echo "<td>" . $mon[0] . "</td>";
                 echo "</tr>";
             }
-            ?>
-            <tr  class="head">
-                <th colspan="2">上一页</th>
-                <th colspan="2"><p>跳转至:<input type="text"></p></th>
-                <th colspan="2">下一页</th>
+            echo
+            "<tr  class=\"head\">
+                <th colspan=\"2\">上一页</th>
+                <th colspan=\"2\"><p>跳转至:<input type=\"text\"></p></th>
+                <th colspan=\"2\">下一页</th>
             </tr>
-        </table>
+        </table>";
+        }else{
+            echo "<div class=\"yue\"><hr><p>你不是贫困生,暂不开放此功能</p><hr></div>";
+        }
+        ?>
     </div>
     <div class="bar2_2_page">
-        <table>
-            <tr class="head">
+        <?php
+        if($arr[8] == 1){
+            echo
+            "<table>
+            <tr class=\"head\">
                 <th></th>
                 <th>学院</th>
                 <th>学期</th>
                 <th>金额</th>
                 <th>状态</th>
                 <th>备注</th>
-            </tr>
-            <?php
-            for($i = 1;$i<=20;$i++){
+            </tr>";
+            $str = "select * from stu".$arr[2]." WHERE title = '助学金'";
+            $result = mysql_query($str);
+            for($i = 1;$mon = mysql_fetch_row($result);$i++){
                 echo "<tr>";
                 echo "<td>".$i."</td>";
                 echo "<td>".$arr[4]."</td>";
-                echo "<td>2016-2017</td>";
-                echo "<td>3000</td>";
+                echo "<td>".$mon[2]."</td>";
+                echo "<td>".$mon[1]."</td>";
                 echo "<td>已发放</td>";
-                echo "<td>助学金</td>";
+                echo "<td>".$mon[0]."</td>";
                 echo "</tr>";
             }
-            ?>
-            <tr  class="head">
-                <th colspan="2">上一页</th>
-                <th colspan="2"><p>跳转至:<input type="text"></p></th>
-                <th colspan="2">下一页</th>
+            echo
+            "<tr  class=\"head\">
+                <th colspan=\"2\">上一页</th>
+                <th colspan=\"2\"><p>跳转至:<input type=\"text\"></p></th>
+                <th colspan=\"2\">下一页</th>
             </tr>
-        </table>
+        </table>";
+        }else{
+            echo "<div class=\"yue\"><hr><p>你不是贫困生,暂不开放此功能</p><hr></div>";
+        }
+        ?>
     </div>
     <div class="bar2_3_page">
         <div class="yue">
