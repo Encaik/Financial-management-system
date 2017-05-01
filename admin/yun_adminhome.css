@@ -46,8 +46,11 @@ body {
     background-color: #616260;
     width: 307px;
 }
-.user img{
+.user img {
     width: 100px;
+    height: 100px;
+    border: 2px solid gainsboro;
+    border-radius: 50px;
 }
 .user p{
     padding-bottom: 10px;
@@ -165,8 +168,8 @@ input[type="text"] {
     height: 20px;
     width: 150px;
 }
-.bar1_2_page .button{
-    margin: 0 400px;
+.bar1_2_page .button1{
+    margin: 0 50px;
     width: 90px;
     height: 35px;
     background: #8c8f8b;
@@ -174,6 +177,8 @@ input[type="text"] {
     font-size: 15px;
     color: #fbfbff;
     border:0 solid #8c8f8b;
+    position: relative;
+    left: 260px;
 }
 select{
 
@@ -183,14 +188,14 @@ select{
 .bar2_1_page th,.bar2_2_page th,.bar3_1_page th,.bar3_2_page th,.bar3_3_page th,.bar3_4_page th,.bar4_1_page th{
 
     width: 1000px;
-    border: 2px solid rgba(156, 156, 156, 0);
+    border: 0 solid rgba(156, 156, 156, 0);
     background-color: rgba(1, 8, 9, 0.5);
     height: 30px;
 }
 .bar2_1_page td,.bar2_2_page td,.bar3_1_page td,.bar3_2_page td,.bar3_3_page td,.bar3_4_page td,.bar4_1_page td{
 
     width: 1000px;
-    border-bottom: 2px solid rgba(120, 125, 121, 0.46);
+    border-bottom: 1px solid rgba(120, 125, 121, 0.46);
     background-color: rgba(212, 213, 214, 0.5);
     height: 28px;
 }

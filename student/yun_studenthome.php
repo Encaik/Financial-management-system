@@ -128,7 +128,7 @@
                 <th>备注</th>
             </tr>
             <?php
-            $str = "select * from stu".$arr[2]." WHERE title != '学费'";
+            $str = "select * from stu".$arr[2]." WHERE title != '学费' and title != '助学金' and title != '助学贷款'";
             $result = mysql_query($str);
             for($i = 1;$mon = mysql_fetch_row($result);$i++){
                 echo "<tr>";

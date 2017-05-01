@@ -15,7 +15,7 @@ include "admin.php"
         <img src="../Logo/扬大横_白.png" alt="Logo">
     </div>
     <div class="user">
-        <img src="../image/user.png">
+        <img src="../image/<?PHP echo $arr[4] ?>">
         <p><?PHP echo $arr[0] ?>,您好</p>
         <p>欢迎进入云财务管理系统</p>
     </div>
@@ -78,20 +78,22 @@ include "admin.php"
     </div>
 </div>
 <div class="bar1_2_page">
-    <div class="yue">
-        <form>
-            <p>修改密码</p>
+    <div class="yue" style="position: relative;top: 80px">
+        <form action="./Update.php" method="post">
+            <p>修改信息</p>
             <hr>
-            <div style="text-align:left ;padding-left:300px">
-                <br>
-                <p><label for="input1_2_1">原密码：</label><input id="input1_2_1" type="text" name="name"></p>
-                <br>
-                <p><label for="input1_2_2">新密码：</label><input id="input1_2_2" type="text" name="name"></p>
-                <br>
-                <p></p>
+            <div style="text-align: left;position: relative;left: 350px;">
+                姓名：<input type="text" name="adm_name">
+                <br><br>
+                密码：<input type="text" name="adm_pwd">
+                <br><br>
+                部门：<input type="text" name="adm_bumen">
+                <br><br>
+                请上传头像图片：<input type="file"  name="adm_pic"><br/>
             </div>
             <hr>
-            <input style="text-align:center" class="button" type="submit" value="上交" >
+            <input class="button1" type="submit" value="上交" >
+            <input class="button1" type="button" value="取消"  onclick="reset();">
         </form>
     </div>
 </div>
@@ -128,218 +130,22 @@ include "admin.php"
             <td>30</td>
             <td>已交</td>
             <td></td>
-
         </tr>
-        <tr>
-            <td>2</td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>14</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>16</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>17</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>19</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>20</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <?php
+        for($i = 2;$i<=19;$i++){
+            echo "<tr>";
+            echo "<td>".$i."</td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "</tr>";
+        }
+        ?>
     </table>
     <form style="float:right">X条记录&nbsp;x/xxx页&nbsp;上一页&nbsp;下一页&nbsp;<label for="input2_1_2">跳转到：</label><input style="width:50px;" id="input2_1_2" type="text" name="name"></form>
 </div>
@@ -352,7 +158,6 @@ include "admin.php"
     <table style="text-align:center;">
         <tr>
             <th>序号</th>
-            <th>账户</th>
             <th>姓名</th>
             <th>性别</th>
             <th>学号</th>
@@ -366,7 +171,6 @@ include "admin.php"
         </tr>
         <tr>
             <td>1</td>
-            <td >161300000</td>
             <td >张三</td>
             <td>男</td>
             <td>161300000</td>
@@ -378,272 +182,23 @@ include "admin.php"
             <td><input class="button3" type="button" value="详情"></td>
             <td><input class="button3" type="button" value="编辑"><input class="button3" type="button" value="删除"></td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>14</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>16</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>17</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>19</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>20</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <?php
+        for($i = 2;$i<=19;$i++){
+            echo "<tr>";
+            echo "<td>".$i."</td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "<td></td>";
+            echo "</tr>";
+        }
+        ?>
     </table>
     <form style="float:right">X条记录&nbsp;x/xxx页&nbsp;上一页&nbsp;下一页&nbsp;<label for="input2_2_2">跳转到：</label><input style="width:50px;" id="input2_2_2" type="text" name="name"></form>
 </div>
